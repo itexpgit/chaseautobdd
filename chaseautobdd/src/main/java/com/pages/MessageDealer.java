@@ -49,6 +49,9 @@ public class MessageDealer {
 @FindBy(xpath = "//button[@data-pt-name='af_lower_price']")
     private WebElement lowerprice;
 
+@FindBy(xpath = "//a[@class ='u-link chaseanalytics-opt-exlnk']")
+    private WebElement mail;
+
 
 
 
@@ -57,9 +60,9 @@ public class MessageDealer {
        {
           
           WebDriverWait wait = new WebDriverWait(driver, 30);
-          wait.until(ExpectedConditions.visibilityOf(lowerprice)); 
+          wait.until(ExpectedConditions.visibilityOf(mail)); 
           Actions a = new Actions(driver);
-          a.moveToElement(submit);
+          a.moveToElement(mail);
           a.perform();
           firstname.sendKeys(ftname);
         
