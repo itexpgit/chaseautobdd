@@ -21,7 +21,8 @@ public class AutoPage {
         this.driver = driver;
 
     }
-    @FindBy(xpath = "//a[@id='HorizontalMenuLink_1']/span")
+    //@FindBy(xpath = "//a[@id='HorizontalMenuLink_1']/span")
+    @FindBy(xpath = "//a[@data-pt-name='mid_shop']")
     private WebElement horizontalmenulink;
 
     @FindBy(id = "Shop_Section1_ShopNow")
