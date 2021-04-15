@@ -66,6 +66,7 @@ public class StepDefinitions {
     @When("^Select Shop Icon$")
     public void select_Shop_Icon() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
+        autopage.clickFirstShopNow();
         autopage.clickShop();
     }
 

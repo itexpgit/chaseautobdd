@@ -27,6 +27,9 @@ public class AutoPage {
 
     @FindBy(id = "Shop_Section1_ShopNow")
     private WebElement shopnow;
+    
+    @FindBy(xpath = "//a[@id='Homepage_Tile1_Btn']")
+    private WebElement firstshopnow;
 
     public void clickShop() {
         try {
@@ -40,5 +43,9 @@ public class AutoPage {
 
     public void clickShopNow() {
         shopnow.click();
+    }
+    
+     public void clickFirstShopNow() {
+        firstshopnow.click();
     }
 }
